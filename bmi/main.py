@@ -28,4 +28,4 @@ elif bmi_float > 18.5:
 else:
     risultato = "sottopeso"
 
-print(f"sei alto {altezza_in_cm_float}cm e pesi {peso_in_kg}kg e il tuo indice di massa corporea è: {bmi_float} quindi sei {risultato}")
+print(f"sei alto {altezza_in_cm_float}cm e pesi {peso_in_kg}kg e il tuo indice di massa corporea è: {bmi_float_rounded} quindi sei {risultato}")
