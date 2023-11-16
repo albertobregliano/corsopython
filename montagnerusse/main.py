@@ -11,8 +11,8 @@ if altezza_in_cm_int > 120:
     età = input("Quanti anni hai?\n")
     età_int = int(età)
     if età_int >= 45 and età_int <=55:
-         
-    if età_int >= 18:
+         print("Viaggio gratis!")
+    elif età_int >= 18:
         print("il biglietto costa $12\n")
         costo_del_biglietto_in_USD += 12
     elif età_int > 12:
