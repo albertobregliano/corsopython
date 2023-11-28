@@ -41,11 +41,13 @@ scelta_utente_int = scelta_map.index(scelta_utente_str)
 scelta_pc_int = random.randint(0, 2)
 print(f"Hai scelto:\n{map[scelta_utente_int]} e il pc ha scelto:\n{map[scelta_pc_int]}")
 
-if scelta_utente_int == scelta_pc_int:
+diff = scelta_utente_int - scelta_pc_int
+
+if diff == 0:
     print("Parità\n")
-elif scelta_pc_int == scelta_utente_int +1:
-    print("Hai perso\n")
-elif scelta_pc_int == scelta_pc_int + 2:
-    print("Hai vinto\n")
-else: print("Hai perso!")
+
+if diff == 1 or diff == -2:
+    print("Hai vinto!")
+else:
+    print("Hai perso!")
 
